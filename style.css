@@ -4,7 +4,6 @@
   --togglebg: #d4e7d5;
   --toggleslider: #fff;
   --roundcolor: #fff;
-  svgcolor: #111;
 }
 
 [data-theme="dark"] {
@@ -13,7 +12,6 @@
   --togglebg: #333;
   --toggleslider: #e9dcdc;
   --roundcolor: #333;
-  svgcolor: #fff;
 }
 
 body {
@@ -24,24 +22,19 @@ body {
   transition: all 0.5s;
 }
 
-.slider {
-  background-color: var(--togglebg);
-  bottom: 0;
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  transition: 0.4s;
+.theme-switch-wrapper {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  margin-top: 20%;
 }
 
-.slider::before {
-  background-color: var(--roundcolor);
-  bottom: 4px;
-  content: "";
-  height: 26px;
-  left: 4px;
-  position: absolute;
-  transition: 0.4s;
-  width: 26px;
+.btn-theme {
+  background-color: var(--color);
+  color: var(--bg-color);
+  width: 180px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 5%;
 }

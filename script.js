@@ -1,7 +1,7 @@
 "use strict";
 let lightMode = true;
 
-document.querySelector(".check").addEventListener("click", function () {
+document.querySelector(".btn-theme").addEventListener("click", function () {
   if (lightMode) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
