@@ -14,6 +14,14 @@
   --roundcolor: #333;
 }
 
+[data-theme="milkshake"] {
+  --bg-color: #212b43;
+  --color: #62cfe6;
+  --togglebg: #f19dac;
+  --toggleslider: #f6f4a0;
+  --roundcolor: #73e4d0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -37,4 +45,37 @@ body {
   height: 60px;
   font-size: 20px;
   border-radius: 5%;
+}
+
+.dropbtn {
+  background-color: var(--color);
+  color: var(--bg-color);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.theme-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color);
+  color: var(--bg-color);
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--bg-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.theme-dropdown:hover .dropdown-content {
+  display: block;
 }
